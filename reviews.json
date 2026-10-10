@@ -1,0 +1,9 @@
+[
+  { "name": "Alice", "rating": 5, "review": "FocusFlow has completely changed how I study. The Pomodoro timer keeps me on track!" },
+  { "name": "Ben", "rating": 5, "review": "Love the journal feature. Being able to reflect after each session really helps." },
+  { "name": "Clara", "rating": 4, "review": "Really clean design and easy to use. Would love cloud sync in the future." },
+  { "name": "David", "rating": 4, "review": "The todo list is simple but effective. Does exactly what I need." },
+  { "name": "Emma", "rating": 3, "review": "Good app overall, though I'd like more customisation options for the timer." },
+  { "name": "Finn", "rating": 2, "review": "Decent but feels a bit basic compared to other productivity apps." },
+  { "name": "Grace", "rating": 1, "review": "Had some issues with data not saving correctly on my browser." }
+]

@@ -1,0 +1,374 @@
+/* 
+   1. Reset & Base
+*/
+ 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+ 
+img {
+  max-width: 100%;
+  display: block;
+}
+ 
+ 
+/* 
+   2. Typography & Links
+ */
+ 
+a {
+  color: #6366f1;
+  text-decoration: none;
+}
+ 
+a:hover {
+  text-decoration: underline;
+}
+ 
+.page-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e1b4b;
+  margin-bottom: 1.5rem;
+}
+ 
+ 
+/* 
+   3. Layout
+ */
+ 
+main {
+  flex: 1;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+ 
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+ 
+ 
+/* 
+   4. Header
+ */
+ 
+.site-header {
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+ 
+.header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+ 
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+ 
+.logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: white;
+}
+ 
+.site-name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+ 
+.tagline {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+ 
+ 
+/* 
+   5. Navigation
+*/
+ 
+.site-nav {
+  background: #1e1b4b;
+}
+ 
+.site-nav ul {
+  max-width: 960px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+}
+ 
+.site-nav ul li a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #c7d2fe;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+ 
+.site-nav ul li a:hover,
+.site-nav ul li a.active {
+  background: #6366f1;
+  color: white;
+  text-decoration: none;
+}
+ 
+ 
+/* 
+   6. Hero
+ */
+ 
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+ 
+.hero-text h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e1b4b;
+}
+ 
+.hero-text p {
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+ 
+.hero-image img {
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  width: 100%;
+}
+ 
+ 
+/* 
+   7. Buttons
+ */
+ 
+.btn {
+  display: inline-block;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  color: white;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+ 
+.btn:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+ 
+ 
+/*
+   8. Feature Cards
+ */
+ 
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+ 
+.feature-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  text-align: center;
+}
+ 
+.feature-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+ 
+.feature-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #1e1b4b;
+}
+ 
+.feature-card p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+ 
+ 
+/* 
+   9. Info Sections
+ */
+ 
+.info-section {
+  margin-bottom: 2rem;
+}
+ 
+.info-section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1e1b4b;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #6366f1;
+  display: inline-block;
+}
+ 
+.info-section p {
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+ 
+.info-section ul {
+  padding-left: 1.5rem;
+  color: #4b5563;
+  line-height: 2;
+}
+ 
+ 
+/* 
+   10. Tip Grid
+ */
+ 
+.tip-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+ 
+.tip-item {
+  background: #f0f4ff;
+  border-left: 4px solid #6366f1;
+  padding: 0.75rem 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+ 
+ 
+/*
+   11. Reviews
+ */
+ 
+.rating-group {
+  margin-bottom: 1.5rem;
+}
+ 
+.rating-group h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e1b4b;
+  margin-bottom: 0.75rem;
+}
+ 
+.review-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+  border-left: 4px solid #6366f1;
+  margin-bottom: 0.75rem;
+}
+ 
+.review-card .reviewer-name {
+  font-weight: 600;
+  color: #1e1b4b;
+  margin-bottom: 0.25rem;
+}
+ 
+.review-card .stars {
+  color: #f59e0b;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+ 
+.review-card .review-text {
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+ 
+ 
+/* 
+   12. Utility / State
+ */
+ 
+.loading {
+  text-align: center;
+  color: #9ca3af;
+  padding: 2rem;
+}
+ 
+.error-msg {
+  color: #ef4444;
+  text-align: center;
+  padding: 1rem;
+}
+ 
+ 
+/*
+   13. Footer
+*/
+ 
+.site-footer {
+  background: #1e1b4b;
+  color: #a5b4fc;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.875rem;
+  margin-top: auto;
+}
+ 
+.site-footer strong {
+  color: white;
+}
+ 
+ 
+/* 
+   14. Responsive (≤ 720px)
+ */
+ 
+@media (max-width: 720px) {
+  .hero        { grid-template-columns: 1fr; }
+  .features    { grid-template-columns: 1fr; }
+  .tip-grid    { grid-template-columns: 1fr; }
+  .site-nav ul { flex-wrap: wrap; }
+  .site-name   { font-size: 1.5rem; }
+}
+ 
